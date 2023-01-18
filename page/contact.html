@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>
+            Genshin Impact
+        </title>
+        <link rel="stylesheet" type="text/css" href="../css/Form.css">
+    </head>
+    <body>
+        <ul class="head">
+            <button onclick="rtn()">retour</button>
+        </ul>
+
+        <div class="container">
+            <form action="https://genshin.hoyoverse.com/">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nom">Nom</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nom" name="nom" placeholder="Donald">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pnom">Prenom</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="pnom" name="pnom" placeholder="Youngoua">
+                    </div>
+                </div>
+                <div class="row">
+                    <p>Vous etes: </p>
+                    <div class="col-75">
+                        <input type="radio" id="Homme" name="sexe" value="Homme">
+                        <label for="Homme">Un Homme</label><br>
+                    </div>
+                    <div class="col-25">
+                        <input type="radio" id="Femme" name="sexe" value="Femme">
+                        <label for="Femme">Une Femme</label><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="serveur">Serveur</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="serveur" name="serveur">
+                            <option value="europe">europe</option>
+                            <option value="asie">asie</option>
+                            <option value="amerique">amerique</option>
+                            <option value="autre">TKMO & autres</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="motiv">motivation</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="motiv" name="motiv" placeholder="Entrer votre motivation.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <script src="../js/script_dyfa.js"></script>
+    </body>
+</html>

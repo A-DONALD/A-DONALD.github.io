@@ -1,0 +1,28 @@
+#liste {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+    min-width: 400px;
+}
+  
+#liste td, #liste th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#liste td {
+    text-align: center;
+}
+
+#liste caption {
+    font-size: 25px;
+}
+
+#liste th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0334c6;
+    color: white;
+}
