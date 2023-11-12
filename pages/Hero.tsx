@@ -10,7 +10,7 @@ const Hero = () => {
                         <div className="relative rounded-full overflow-hidden w-96 h-96">
                             <Image
                                 src="/images/profilepic.jpg"
-                                alt="Ma photo"
+                                alt="profile picture"
                                 layout="fill"
                                 objectFit="cover"
                             />
