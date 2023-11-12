@@ -1,4 +1,4 @@
-import Card from '@/components/Card';
+import Skillcard from '@/components/Skillcard';
 import React from 'react';
 
 const Skills = () => {
@@ -10,8 +10,8 @@ const Skills = () => {
                 <div className="w-1/2 pr-4 text-center">
                     <h2 className="text-2xl py-4 font-bold mb-4">Code Skills</h2>
                     <div>
-                        <Card title="JavaScript" icon={<i className="fab fa-js"></i>} />
-                        <Card title="React" icon={<i className="fab fa-react"></i>} />
+                        <Skillcard title="JavaScript" icon={<i className="fab fa-js"></i>} />
+                        <Skillcard title="React" icon={<i className="fab fa-react"></i>} />
                         {/* Ajoutez d'autres compétences en programmation ici */}
                     </div>
                 </div>
@@ -21,8 +21,8 @@ const Skills = () => {
                 <div className="w-1/2 pl-4 text-center">
                     <h2 className="text-2xl py-4 font-bold mb-4">Soft Skills</h2>
                     <div>
-                        <Card title="Communication" icon={<i className="fas fa-comments"></i>} />
-                        <Card title="Collaboration" icon={<i className="fas fa-users"></i>} />
+                        <Skillcard title="Communication" icon={<i className="fas fa-comments"></i>} />
+                        <Skillcard title="Collaboration" icon={<i className="fas fa-users"></i>} />
                         {/* Ajoutez d'autres compétences non techniques ici */}
                     </div>
                 </div>
