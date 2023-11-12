@@ -2,11 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 
 const Hero = () => {
-    const windowWidth = typeof window !== 'undefined' ? window.innerWidth : 0;
-    const isWideScreen = windowWidth >= 400; // Changer cette valeur en fonction de vos besoins
-
     return (
-        <section id="about">
+        <section id="about" className="h-screen flex items-center">
             <div className="container mx-auto py-8">
                 <div className="flex items-center">
                     <div className="w-1/2 pl-8">
@@ -19,7 +16,7 @@ const Hero = () => {
                             />
                         </div>
                     </div>
-                    <div className="w-1/2">
+                    <div className="content-center w-1/2">
                         <h2 className="text-4xl font-bold mb-4">À propos de moi</h2>
                         <p className="text-lg">
                             Bienvenue sur mon portfolio! Je suis un étudiant en informatique et réseau passionné
