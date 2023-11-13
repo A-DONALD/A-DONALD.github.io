@@ -14,8 +14,14 @@ export default function Home() {
       <Hero />
       <Skills />
       <Projects />
-      <Formation />
-      <Certifications />
+      <div className='container flex flex-wrap justify-center'>
+        <div className="w-full md:w-1/2">
+          <Formation />
+        </div>
+        <div className="w-full md:w-1/2">
+          <Certifications />
+        </div>
+      </div>
       <Contact />
       <Footer />
     </main>
