@@ -1,4 +1,4 @@
-import SkillCard from '@/components/Skillcard';
+import SkillCard from '@/components/SkillCard';
 import React from 'react';
 
 const Skills = () => {

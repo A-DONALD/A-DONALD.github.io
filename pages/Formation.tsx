@@ -5,19 +5,25 @@ const Formation = () => {
     const studies = [
         {
             schoolLogo: 'https://www.aurlom.com/js/tinymce/uploads/logo_esaip_ingenieur_rvb.png',
-            title: 'Formation 1',
-            schoolName: 'École 1',
-            period: '2020 - 2021',
-            additionalDetails: 'Détails de la formation 1...',
+            title: 'CYCLE INGENIEUR : INFORMATIQUE ET RESEAUX',
+            schoolName: "ESAIP - école d'ingénieur",
+            period: 'sept 2022 - En cours',
+            additionalDetails: "Détails de la formation à l'ESAIP...",
+        },
+        {
+            schoolLogo: 'https://www.deardegree.com/images/15528011405c8ddd74f3409.jpg',
+            title: 'ERASMUS : COMPUTER SCIENCE AND ENGINEERING',
+            schoolName: 'University of West Bohemia',
+            period: 'fev 2023 - mai 2023',
+            additionalDetails: "Détails de la formation à l'ESAIP...",
         },
         {
             schoolLogo: 'https://pbs.twimg.com/profile_images/1366294791852548101/XDZ0XjpC_400x400.jpg',
-            title: 'Formation 2',
-            schoolName: 'École 2',
-            period: '2018 - 2019',
-            additionalDetails: 'Détails de la formation 2...',
+            title: 'CLASSES PREPARATOIRES PCSI',
+            schoolName: 'Institut universitaire de la côte',
+            period: 'sept 2019 - juin 2022',
+            additionalDetails: "Détails de la formation à l'ESAIP...",
         },
-        // Ajoutez d'autres formations ici
     ];
 
     return (
