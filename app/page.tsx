@@ -14,16 +14,18 @@ export default function Home() {
       <Hero />
       <Skills />
       <Projects />
-      <div className='container flex flex-wrap justify-center'>
-        <div className="w-full md:w-1/2">
-          <Formation />
-        </div>
-        <div className="w-full md:w-1/2">
-          <Certifications />
+      <div className='container mx-auto py-16 text-center'>
+        <div className='flex flex-wrap justify-center items-center'>
+          <div className="w-full md:w-1/2">
+            <Formation />
+          </div>
+          <div className="w-full md:w-1/2">
+            <Certifications />
+          </div>
         </div>
       </div>
       <Contact />
       <Footer />
-    </main>
+    </main >
   )
 }
