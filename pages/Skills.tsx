@@ -15,8 +15,7 @@ const Skills = () => {
                         {/* Ajoutez d'autres compétences en programmation ici */}
                     </div>
                 </div>
-                {/* Trait vertical */}
-                <div className="w-px bg-gray-300 mx-4 h-96"></div>
+
                 {/* Partie Soft Skills */}
                 <div className="w-1/2 pl-4 text-center">
                     <h2 className="text-2xl py-4 font-bold mb-4">Soft Skills</h2>

@@ -11,7 +11,7 @@ const Formation = () => {
             additionalDetails: 'Détails de la formation 1...',
         },
         {
-            schoolLogo: '/images/school2.png',
+            schoolLogo: 'https://pbs.twimg.com/profile_images/1366294791852548101/XDZ0XjpC_400x400.jpg',
             title: 'Formation 2',
             schoolName: 'École 2',
             period: '2018 - 2019',
@@ -21,10 +21,13 @@ const Formation = () => {
     ];
 
     return (
-        <div className="flex flex-col items-center">
-            {studies.map((study, index) => (
-                <Study key={index} {...study} />
-            ))}
+        <div className='container mx-auto py-16 text-center'>
+            <h1 className="text-4xl py-8 font-bold mb-4">Formations</h1>
+            <div className="flex flex-col items-center">
+                {studies.map((study, index) => (
+                    <Study key={index} {...study} />
+                ))}
+            </div>
         </div>
     );
 };

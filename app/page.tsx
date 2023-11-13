@@ -1,5 +1,5 @@
 import Hero from '@/pages/Hero'
-import Certifs from '@/pages/Certifs'
+import Certifications from '@/pages/Certifications'
 import Contact from '@/pages/Contact'
 import Footer from '@/pages/Footer'
 import Formation from '@/pages/Formation'
@@ -15,7 +15,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Formation />
-      <Certifs />
+      <Certifications />
       <Contact />
       <Footer />
     </main>
