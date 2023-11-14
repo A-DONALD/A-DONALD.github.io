@@ -1,7 +1,7 @@
 import React from 'react';
 import { codeSkills } from '@/lib/data';
 import { softSkills } from '@/lib/data';
-import SkillCard from '@/components/SkillCard';
+import SkillCard from '../components/SkillCard';
 
 const Skills = () => {
     return (
