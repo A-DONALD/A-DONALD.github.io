@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Projects />
-      <div className='container mx-auto py-16 text-center'>
+      <div className='container mx-auto text-center'>
         <div className='flex flex-wrap justify-center items-center'>
           <div className="w-full md:w-1/2">
             <Formation />

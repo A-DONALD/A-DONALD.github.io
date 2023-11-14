@@ -5,7 +5,7 @@ import SkillCard from '@/components/SkillCard';
 
 const Skills = () => {
     return (
-        <div id='skills' className="container mx-auto py-16 text-center">
+        <div id='skills' className="container mx-auto py-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Skills</h1>
             <div className="flex flex-wrap items-center justify-center md:flex-row flex-col">
                 <div className="w-full md:w-1/2 text-center mb-8 md:mb-0">

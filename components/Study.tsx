@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect, MouseEvent } from 'react';
 
 interface StudyProps {
     schoolLogo: string;
@@ -10,10 +10,28 @@ interface StudyProps {
 
 const Study: React.FC<StudyProps> = ({ schoolLogo, title, schoolName, period, additionalDetails }) => {
     const [showDetails, setShowDetails] = useState(false);
+    const detailsRef = useRef<HTMLDivElement>(null);
 
     const toggleDetails = () => {
         setShowDetails(!showDetails);
     };
+
+    const closeDetails = () => {
+        setShowDetails(false);
+    };
+
+    const handleClickOutside = (event: MouseEvent) => {
+        if (detailsRef.current && !detailsRef.current.contains(event.target as Node)) {
+            closeDetails();
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <div className="relative bg-slate-200 rounded-full p-4 mb-4 max-w-80vw md:max-w-480px mx-auto">
@@ -33,14 +51,16 @@ const Study: React.FC<StudyProps> = ({ schoolLogo, title, schoolName, period, ad
             </div>
 
             {showDetails && (
-                <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 shadow-md rounded-md">
-                    <p>{additionalDetails}</p>
-                    <button
-                        className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                        onClick={toggleDetails}
-                    >
-                        Fermer
-                    </button>
+                <div className="fixed top-0 left-0 w-full h-full z-40 flex items-center justify-center">
+                    <div ref={detailsRef} className='bg-white p-4 mb-4 mx-2 w-[480] shadow-md rounded-md cursor-pointer border-4 border-slate-300'>
+                        <div className="flex items-center justify-center mb-2">
+                            <img src={schoolLogo} alt={schoolName} className=" w-80 object-cover rounded-md" />
+                        </div>
+                        <h3 className="text-xl font-bold mb-2">{title}</h3>
+                        <p className="text-gray-600 mb-2">{schoolName}</p>
+                        <p className="text-gray-600 mb-2">{period}</p>
+                        <p>{additionalDetails}</p>
+                    </div>
                 </div>
             )}
         </div>

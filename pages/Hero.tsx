@@ -3,10 +3,10 @@ import Image from 'next/image'
 
 const Hero = () => {
     return (
-        <section id="about" className="h-screen flex items-center">
-            <div className="container mx-auto py-8">
+        <section id="about" className=" h-screen flex items-center">
+            <div className="container mx-auto py-4">
                 <div className="flex items-center">
-                    <div className="w-1/2 pl-8">
+                    <div className="w-1/2 pl-4">
                         <div className="relative rounded-full overflow-hidden w-96 h-96">
                             <Image
                                 src="/images/profilepic.jpg"
@@ -16,7 +16,7 @@ const Hero = () => {
                             />
                         </div>
                     </div>
-                    <div className="content-center w-1/2">
+                    <div className="content-center w-1/2 pr-2">
                         <h2 className="text-4xl font-bold mb-4">À propos de moi</h2>
                         <p className="text-lg">
                             Bienvenue sur mon portfolio! Je suis un étudiant en informatique et réseau passionné
