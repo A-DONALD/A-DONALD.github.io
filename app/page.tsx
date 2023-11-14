@@ -5,6 +5,7 @@ import Footer from '@/pages/Footer'
 import Formation from '@/pages/Formation'
 import Projects from '@/pages/Projects'
 import Skills from '@/pages/Skills'
+import DownloadButton from '@/components/DownloadBtn'
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       </div>
       <Contact />
       <Footer />
+      <DownloadButton btnName='Télécharger' fileURL="/docs/CV.pdf" dwnldName="CV-Donald-Youngoua.pdf" />
     </main >
   )
 }
