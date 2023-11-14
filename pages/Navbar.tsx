@@ -1,7 +1,7 @@
 import React from 'react'
-import { navLinks } from '@/lib/data'
+import { navLinks } from '../lib/data'
 import Link from 'next/link'
-import Downloadbutton from '@/components/Downloadbtn'
+import Downloadbutton from '../components/Downloadbtn'
 
 const Navbar = () => {
     return (

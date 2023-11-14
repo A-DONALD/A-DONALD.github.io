@@ -1,6 +1,6 @@
 import React from 'react';
-import Mediacard from '@/components/Mediacard';
-import { contactsLinks } from '@/lib/data';
+import Mediacard from '../components/Mediacard';
+import { contactsLinks } from '../lib/data';
 
 const Contact = () => {
     return (
