@@ -11,7 +11,7 @@ const Projects = () => {
         },
         {
             title: 'AI - Classifier',
-            imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png',
+            imageSrc: 'https://cdn.rebrickable.com/media/thumbs/mocs/moc-91667.jpg/1000x800.jpg',
             details: 'Python implementation of text classificator with Machine Learning (Scikit-Learn)',
             projectLink: 'https://github.com/A-DONALD/AI-Classifier',
         },
@@ -30,7 +30,7 @@ const Projects = () => {
     ];
 
     return (
-        <div className='container mx-auto py-16 text-center'>
+        <div id='projects' className='container mx-auto py-16 text-center'>
             <h1 className="text-4xl py-8 font-bold mb-4">Projects</h1>
             <div className="flex flex-wrap justify-center">
                 {projects.map((project, index) => (

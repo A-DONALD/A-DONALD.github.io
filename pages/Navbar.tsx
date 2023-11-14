@@ -1,9 +1,37 @@
 import React from 'react'
 
-const navBar = () => {
+const Navbar = () => {
+    const links = [
+        {
+            name: 'About Me',
+            hash: '#about',
+        },
+        {
+            name: 'Skills',
+            hash: '#skills',
+        },
+        {
+            name: 'Projects',
+            hash: '#projects',
+        },
+        {
+            name: 'Formation',
+            hash: '#formations',
+        },
+        {
+            name: 'Certifications',
+            hash: '#certifications',
+        },
+        {
+            name: 'Contacts',
+            hash: '#contact',
+        },
+    ];
     return (
-        <div>navBar</div>
+        <header>
+            <div>Navbar</div>
+        </header>
     )
 }
 
-export default navBar
+export default Navbar

@@ -1,5 +1,6 @@
 "use client"
-import Study from '@/components/Study'; // Assurez-vous d'ajuster le chemin selon votre structure de fichiers
+
+import Study from '@/components/Study';
 
 const Formation = () => {
     const studies = [
@@ -27,7 +28,7 @@ const Formation = () => {
     ];
 
     return (
-        <div className='container py-16 text-center'>
+        <div id='formation' className='container py-16 text-center'>
             <h1 className="text-4xl py-8 font-bold mb-4">Formations</h1>
             <div className="flex flex-col items-center">
                 {studies.map((study, index) => (

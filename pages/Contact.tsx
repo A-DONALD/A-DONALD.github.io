@@ -36,7 +36,7 @@ const Contact = () => {
     ];
 
     return (
-        <div className="container mx-auto mt-8 p-8 text-center">
+        <div id='contact' className="container mx-auto mt-8 p-8 text-center">
             <h2 className="text-4xl font-bold mb-6">Contacts</h2>
             <div className="flex flex-wrap justify-center">
                 {socialMediaLinks.map((link, index) => (
