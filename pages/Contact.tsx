@@ -1,6 +1,6 @@
 import React from 'react';
-import Mediacard from '../components/Mediacard';
-import { contactsLinks } from '../lib/data';
+import MediaCard from '@/components/MediaCard';
+import { contactsLinks } from '@/lib/data';
 
 const Contact = () => {
     return (
@@ -8,7 +8,7 @@ const Contact = () => {
             <h2 className="text-4xl font-bold mb-6">Contacts</h2>
             <div className="flex flex-wrap justify-center">
                 {contactsLinks.map((contact, index) => (
-                    <Mediacard key={index} {...contact} />
+                    <MediaCard key={index} {...contact} />
                 ))}
             </div>
         </div>

@@ -6,7 +6,7 @@ interface DownloadBtnProps {
     dwnldName: string;
 }
 
-const Downloadbutton: React.FC<DownloadBtnProps> = ({ btnName, fileURL, dwnldName }) => {
+const DownloadButton: React.FC<DownloadBtnProps> = ({ btnName, fileURL, dwnldName }) => {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = fileURL;
@@ -21,4 +21,4 @@ const Downloadbutton: React.FC<DownloadBtnProps> = ({ btnName, fileURL, dwnldNam
     );
 };
 
-export default Downloadbutton;
+export default DownloadButton;

@@ -1,7 +1,7 @@
 "use client"
 
-import Study from '../components/Study';
-import { studies } from '../lib/data'
+import Study from '@/components/Study';
+import { studies } from '@/lib/data'
 
 const Formation = () => {
     return (

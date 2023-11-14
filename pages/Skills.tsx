@@ -1,7 +1,7 @@
 import React from 'react';
-import { codeSkills } from '../lib/data';
-import { softSkills } from '../lib/data';
-import Skillcard from '../components/Skillcard';
+import { codeSkills } from '@/lib/data';
+import { softSkills } from '@/lib/data';
+import SkillCard from '@/components/SkillCard';
 
 const Skills = () => {
     return (
@@ -12,7 +12,7 @@ const Skills = () => {
                     <h2 className="text-2xl py-4 font-bold mb-4">Code Skills</h2>
                     <div>
                         {codeSkills.map((code, index) => (
-                            <Skillcard key={index} {...code} />
+                            <SkillCard key={index} {...code} />
                         ))}
                     </div>
                 </div>
@@ -21,7 +21,7 @@ const Skills = () => {
                     <h2 className="text-2xl py-4 font-bold mb-4">Soft Skills</h2>
                     <div>
                         {softSkills.map((soft, index) => (
-                            <Skillcard key={index} {...soft} />
+                            <SkillCard key={index} {...soft} />
                         ))}
                     </div>
                 </div>
