@@ -8,7 +8,7 @@ interface MediaCardProps {
     link: string;
 }
 
-const MediaCard: React.FC<MediaCardProps> = ({
+const Mediacard: React.FC<MediaCardProps> = ({
     iconSrc,
     networkName,
     link,
@@ -55,4 +55,4 @@ const MediaCard: React.FC<MediaCardProps> = ({
     );
 };
 
-export default MediaCard;
+export default Mediacard;

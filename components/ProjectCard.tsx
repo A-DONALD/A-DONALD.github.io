@@ -7,7 +7,7 @@ interface ProjectCardProps {
     projectLink: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, imageSrc, details, projectLink }) => {
+const Projectcard: React.FC<ProjectCardProps> = ({ title, imageSrc, details, projectLink }) => {
     return (
         <div className="bg-white p-4 mb-4 mx-2 w-80 shadow-md rounded-md cursor-pointer border-4 border-slate-500">
             <div className="flex items-center justify-center mb-2">
@@ -22,4 +22,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imageSrc, details, pro
     );
 };
 
-export default ProjectCard;
+export default Projectcard;

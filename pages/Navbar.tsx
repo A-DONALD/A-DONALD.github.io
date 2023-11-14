@@ -1,7 +1,7 @@
 import React from 'react'
 import { navLinks } from '@/lib/data'
 import Link from 'next/link'
-import DownloadButton from '@/components/DownloadBtn'
+import Downloadbutton from '@/components/Downloadbtn'
 
 const Navbar = () => {
     return (
@@ -10,7 +10,7 @@ const Navbar = () => {
                 <div className='flex items-center justify-between h-8'>
                     <div className='flex items-center'>
                         <div className='flex-shrink-0 text-lg border-2 text-slate-800 hover:bg-slate-200 hover:text-white hover:border-slate-500 rounded-lg p-2'>
-                            <DownloadButton btnName='Download CV' fileURL="/docs/CV.pdf" dwnldName="CV-Donald-Youngoua.pdf" />
+                            <Downloadbutton btnName='Download CV' fileURL="/docs/CV.pdf" dwnldName="CV-Donald-Youngoua.pdf" />
                         </div>
                     </div>
                     <div className='hidden md:block'>
