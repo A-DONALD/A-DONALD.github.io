@@ -1,7 +1,7 @@
 // Link of NavBar
 export const navLinks = [
     {
-        name: 'About Me',
+        name: 'About',
         hash: '#about',
     },
     {
