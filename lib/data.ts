@@ -105,21 +105,24 @@ export const studies = [
         title: 'CYCLE INGENIEUR : INFORMATIQUE ET RESEAUX',
         schoolName: "ESAIP - école d'ingénieur",
         period: 'sept 2022 - En cours',
-        additionalDetails: "Détails de la formation à l'ESAIP...",
+        location: 'Angers, FRANCE',
+        additionalDetails: "- Programmation Front End et Back end - Réseau : Bonne maîtrise des réseaux et système ainsi que de CISCO PACKET TRACER - Data Base : Compréhension des bases de données et du SQL",
     },
     {
         schoolLogo: 'https://www.deardegree.com/images/15528011405c8ddd74f3409.jpg',
         title: 'ERASMUS : COMPUTER SCIENCE AND ENGINEERING',
         schoolName: 'University of West Bohemia',
         period: 'fev 2023 - mai 2023',
-        additionalDetails: "Détails de la formation à l'ESAIP...",
+        location: 'Pilsen, REP. TCHEQUE',
+        additionalDetails: "- Programmation Python - Anglais - Gestion de Projet - Programmation Java (Apache Maven)",
     },
     {
         schoolLogo: 'https://pbs.twimg.com/profile_images/1366294791852548101/XDZ0XjpC_400x400.jpg',
         title: 'CLASSES PREPARATOIRES PCSI',
         schoolName: 'Institut universitaire de la côte',
         period: 'sept 2019 - juin 2022',
-        additionalDetails: "Détails de la formation à l'ESAIP...",
+        location: 'Douala, CAMEROUN',
+        additionalDetails: "- Initiation à la programmation C et Java - Manipulation des outils d’électronique de base - Manipulation des outils de modélisation 3D AutoCad et SolidWorks",
     },
 ];
 
