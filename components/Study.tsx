@@ -1,4 +1,5 @@
-import React, { useState, useRef, useEffect, MouseEvent } from 'react';
+import React, { useState, useRef } from 'react';
+import useClickOutside from '@/hook/ClickOuside';
 
 interface StudyProps {
     schoolLogo: string;
@@ -9,6 +10,7 @@ interface StudyProps {
 }
 
 const Study: React.FC<StudyProps> = ({ schoolLogo, title, schoolName, period, additionalDetails }) => {
+
     const [showDetails, setShowDetails] = useState(false);
     const detailsRef = useRef<HTMLDivElement>(null);
 
@@ -20,18 +22,7 @@ const Study: React.FC<StudyProps> = ({ schoolLogo, title, schoolName, period, ad
         setShowDetails(false);
     };
 
-    const handleClickOutside = (event: MouseEvent) => {
-        if (detailsRef.current && !detailsRef.current.contains(event.target as Node)) {
-            closeDetails();
-        }
-    };
-
-    useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
+    useClickOutside(detailsRef, closeDetails);
 
     return (
         <div className="relative bg-slate-200 rounded-full p-4 mb-4 max-w-80vw md:max-w-480px mx-auto">
