@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import DownloadButton from '@/components/DownloadBtn';
 
 const Hero = () => {
