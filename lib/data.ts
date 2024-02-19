@@ -73,8 +73,14 @@ export const softSkills = [
 // Data of projects section
 export const projects = [
     {
+        title: "Salaries Predicition",
+        imageSrc: 'https://www.smartsheet.com/sites/default/files/machine-learning-blog.jpg',
+        details: 'An jupyter notebook of ML predicition for data analyst based on US kaggle dataset',
+        projectLink: 'https://github.com/A-DONALD/SalariesPrediction',
+    },
+    {
         title: 'iOS Backup Extractor',
-        imageSrc: 'https://www.numeriguide.com/wp-content/uploads/bdce3dac75f21fc605aea0a7cf48342a.jpe',
+        imageSrc: 'https://cdn-images-1.medium.com/max/1200/1*_JJj2BtO1cULtWoJjnzJvQ.png     ',
         details: 'This is an python implementation of an extractor of iOS backup',
         projectLink: 'https://github.com/A-DONALD/iBackup-Extractor',
     },
@@ -91,10 +97,28 @@ export const projects = [
         projectLink: 'https://github.com/A-DONALD/AI-Classifier-WebEdition',
     },
     {
+        title: "Design fo Green 2023",
+        imageSrc: 'https://www.angers-developpement.com/wp-content/uploads/2017/10/DESIGN4GREEN_logo.jpg',
+        details: 'a web application for the design4green contest',
+        projectLink: 'https://jdac2023.vercel.app',
+    },
+    {
         title: "Donald's Portfolio",
         imageSrc: 'https://miro.medium.com/v2/resize:fit:1400/1*94Z17dA4rkLL5pOon2ZbCw.jpeg',
         details: 'This is my portfolio creating with Next JS',
         projectLink: 'https://github.com/A-DONALD/A-DONALD.github.io',
+    },
+    {
+        title: "Citadelles",
+        imageSrc: 'https://boardgamestories.com/wp-content/uploads/2016/08/pic3119514-600x480.jpg',
+        details: 'A java implementation of citadelles game',
+        projectLink: 'https://github.com/A-DONALD/Citadelles',
+    },
+    {
+        title: "React Dashboard",
+        imageSrc: 'https://blog.codeinside.eu/assets/md-images/2023-02-11/vitejs.png',
+        details: 'three-tier architecture of admin dashboard who use node server and React UI',
+        projectLink: 'https://github.com/A-DONALD/ReactDashboard',
     },
 ];
 
@@ -155,6 +179,11 @@ export const contactsLinks = [
         link: 'mailto:donaldyoungoua@gmail.com',
     },
     {
+        iconSrc: 'https://cdn-icons-png.flaticon.com/512/126/126103.png',
+        networkName: 'Téléphone',
+        link: 'tel:0751382550',
+    },
+    {
         iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/langfr-220px-Instagram_logo_2022.svg.png',
         networkName: 'Instagram',
         link: 'https://instagram.com/donald.y18?igshid=MzMyNGUyNmU2YQ==',
@@ -163,10 +192,5 @@ export const contactsLinks = [
         iconSrc: 'https://img.freepik.com/vecteurs-libre/nouvelle-conception-icone-x-du-logo-twitter-2023_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.1880011253.1699660800&semt=ais',
         networkName: 'Twitter X',
         link: 'https://x.com/DonaldYoungoua?t=ciaFi8Fwwgi6u1snBa74Hg&s=09',
-    },
-    {
-        iconSrc: 'https://cdn-icons-png.flaticon.com/512/126/126103.png',
-        networkName: 'Téléphone',
-        link: 'tel:0751382550',
     },
 ];
